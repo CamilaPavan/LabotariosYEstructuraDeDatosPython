@@ -24,12 +24,14 @@ def retirar_y_actualizar():
     while True:
         try:
             dinero_retirar = float(input("ingrese el dinero que desea retirar: "))
+            if dinero_retirar > 0 and dinero_retirar <= dinero_disponible:
+                dinero_disponible -= dinero_retirar
+                return (dinero_disponible)
+            else:
+                print("ingrese un valor valido")
         except: 
             print ("error en los parametros")
-        if dinero_retirar > 0:
-            dinero_disponible -= dinero_retirar
 
-            return float (dinero_disponible)
 
 
 """Dinero disponibles"""

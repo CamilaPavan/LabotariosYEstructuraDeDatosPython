@@ -8,6 +8,7 @@ Crear una clase de Peliculas:
     3. Cambiar el genero de una pelicula
 """
 
+
 class Peliculas:
     #CONSTRUCTOR
     def __init__(self,nombre, año, genero, nacionalidad, puntuacion):
@@ -30,10 +31,12 @@ obtuvo una puntuacion de {self.puntuacion} y fue filmada en {self.nacionalidad}"
         elif self.año > año_comparar:
             print ("El año es menor")
 
+    #Cambiar genero
     def cambiar_genero(self,nuevo_genero):
         self.genero = nuevo_genero
         print(f"El nuevo genero de la pelicula es {self.genero}")
 
+    #Modificar puntuacion
     def modificar_puntuacion(self,nueva_puntuacion):
         self.puntuacion = nueva_puntuacion
         print(f"La nueva puntuacion de la pelicula es {self.puntuacion}")

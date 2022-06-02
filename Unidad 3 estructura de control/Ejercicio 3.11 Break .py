@@ -6,8 +6,7 @@ si el usuario escribe "hola" o "chau" que no se haga el eco
 
 
 while True:
-    palabra=str(input("ingrese una palabra:"))
-    
+    palabra=str(input("ingrese una palabra:"))  
     if palabra == "salir":
         print(palabra)
         break

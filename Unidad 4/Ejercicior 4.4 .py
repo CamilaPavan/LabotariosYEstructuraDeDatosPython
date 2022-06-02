@@ -9,6 +9,8 @@
 *   Gestionar posibles errores
 """
 
+
+
 def grados_a_fahrenheit():
     while True:
         try:
@@ -27,6 +29,24 @@ def cm3_a_litros ():
             print ("error, por favor coloque nuevamente el valor")
     print (f"los {cm3} cm3 son {cm3 *0.001} litros")
 
+def litros_a_centrimetros ():
+    while True:
+        try:
+            litros= float(input("por favor coloque el numero de litros que desea convertir: "))
+            break
+        except:
+            print ("error, por favor coloque nuevamente el valor")
+    print (f"los {litros} litros son {litros/0.001} cm3")
+
+def pesos_a_dolares():
+    while true:
+        try:
+            pesos=float(input("ingrese la cantidad de pesos a convertir: "))
+            break
+        except:
+            print ("error, ingrese nuevamente")
+    print(f" ${pesos} = {round(pesos/220,2)} USD")
+
 while True:
     condicion=input(
 """Por favor ingrese una opcion
@@ -41,9 +61,9 @@ Numero : """)
     elif (condicion=="2"):
         cm3_a_litros()
     elif (condicion=="3"):
-        pass
+        litros_a_centrimetros()
     elif (condicion=="4"):
-       pass
+       pesos_a_dolares ()
     elif (condicion=="5"):
         break
     else:

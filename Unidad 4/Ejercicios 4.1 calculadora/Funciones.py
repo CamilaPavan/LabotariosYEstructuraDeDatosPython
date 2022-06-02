@@ -2,11 +2,11 @@
 
 
 def sumador(a,b):
-    suma = float(a)+float(b)
+    suma = a+b
     return suma #podes poner el print aca y que no retorne nada. 
 
 def restador(a,b):
-    resta = float(a)-float(b)
+    resta = a-b
     return resta
 
 def divisor(a,b):

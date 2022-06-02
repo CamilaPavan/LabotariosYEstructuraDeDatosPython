@@ -8,9 +8,9 @@ print(Taxis)
 print(len(Taxis))
 
 for i in range(len(Taxis)):
-  print(f"{Taxis[0][i]} - {Taxis[1][i]} - {Taxis[2][i]}")
+  print(f"{Taxis[0][i]} - {Taxis[1][i]} - {Taxis[2][i]}") #asi recorro los valores de cada lista 
 
-def matriz_nula(filas, columnas): #crear una matriz nula
+def matriz_nula(filas, columnas): #crear una matriz nula, solo ejemplo, no lo usamos 
   matriz = []
   for i in range(filas):
     matriz.append( [0] * columnas )

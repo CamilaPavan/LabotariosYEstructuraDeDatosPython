@@ -1,4 +1,4 @@
-import clases_presentarse as clp
+import clases_presentarse as cp
 
 lista_personas=[]
 
@@ -11,7 +11,7 @@ def crear_personas():
                 if dni == persona.dni:
                     print ("ese DNI ya existe")
                     flag_agregar = False
-                    break
+                    break #para salir del for
             if flag_agregar == True:
                 break #el DNI Es valido 
         else:
@@ -39,13 +39,14 @@ def crear_personas():
             print ("Error de argumentos")
 
     residencia= input("ingrese su domicilio: ")
-    nombre_instacia = dni
-    nombre_instacia = clp.Persona (nombre, dni, apellido,edad,residencia)
+    nombre_instacia = dni #que es el valor que nunca se repite. 
+    nombre_instacia = cp.Persona (nombre, dni, apellido,edad,residencia) #Unico metodo que se llama a traves del archivo importado, el constructor
     lista_personas.append(nombre_instacia)
 
 def listar_personas():
     for persona in lista_personas:
-        persona.presentarse()
+        persona.presentarse() #como todavia no lo recorre, no sabe que es un 
+        #una instancia, por eso queda en blanco 
 
 
 def consultar_rango():
@@ -59,3 +60,5 @@ def consultar_rango():
                 if dni_consultar == persona.dni:
                     persona.rango_edad()
                     return
+        else:
+            print("el DNI no existe")

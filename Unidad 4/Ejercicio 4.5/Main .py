@@ -11,13 +11,17 @@ Gestionar posibles errores
 
 CLASE 10 todo perfecto. 
 """
+
+
 import funciones_saldos as fn
-#import funcion_autentificacion as fna no funciono. 
+import funcion_autentificacion as fa
 dinero_disponible = 50000
 
 
-condicion = fn.usuario_y_contrasena()
+condicion= True
 while condicion:
+    condicion = fa.usuario_y_contrasena()
+
     opcion =input(
 """Por favor ingrese una opcion
         1. consultar saldo
@@ -35,3 +39,5 @@ Numero : """)
         break
     else:
         print("ninguna opcion correcta")
+    
+    condicion = True

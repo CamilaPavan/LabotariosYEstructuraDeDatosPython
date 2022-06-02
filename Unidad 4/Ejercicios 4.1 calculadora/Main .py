@@ -11,7 +11,7 @@ while True:
         3. multiplicacion
         4. division
         5. Salir
-Numero : """)
+Numero:  """)
     if (condicion=="1"): #lo comaparo en STR y no lo tengo que castear. 
         a,b = fn.pedir_numeros() #en las variables "a" y "b" se almacena los que retorna la funcion. 
         print (f"La suma de {a} + {b} = {fn.sumador(a,b)}")

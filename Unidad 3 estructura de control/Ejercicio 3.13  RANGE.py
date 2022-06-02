@@ -6,6 +6,9 @@ Pedir al usuario un número entero positivo y mostrar por pantalla la cuenta atr
 while True:
     try:
         valor = int (input("por favor ingrese el valor "))
+        if valor <= 0:
+            print ('el valor debe ser positivo')
+            continue
         break
     except:
         print ("ingrese nuevamente un valor valido")

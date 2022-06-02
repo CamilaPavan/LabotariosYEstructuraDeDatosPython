@@ -7,12 +7,10 @@ no deben aparecer errores.
 """
 flag = True
 while flag: 
-    try:
-        if input("por favor coloque la palabra clave ")  == "phyton": #Se puede hacer el input dentro del IF, sin definir la variable. 
-         print("Correcto")
-         flag = False
-        else: 
-             print("no ingreso la palabra correcta, intentelo nuevamente ")
-    except:
-        print("INCORRECTO, por favor coloque nuevamente la clave ")
+    if input("por favor coloque la palabra clave ")  == "phyton": #Se puede hacer el input dentro del IF, sin definir la variable. 
+        print("Correcto")
+        flag = False
+    else: 
+        print("no ingreso la palabra correcta, intentelo nuevamente ")
+
 

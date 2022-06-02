@@ -16,20 +16,20 @@ def abecedario():
         except:
             print ("por favor coloque 1 o 2")
     if valor == 2:
-        posicion = 1
+        posicion = 0
         for i in abecesario_en_lista:
             posicion+=1
             if posicion % valor == 0:
-                abecesario_en_lista.pop(i)
+                abecesario_en_lista.remove(i)
             else:
                 pass
         print (abecesario_en_lista)
     elif valor == 3:
-        posicion = 1
+        posicion = 0
         for i in abecesario_en_lista:
             posicion += 1
             if posicion % valor == 0:
-                abecesario_en_lista.pop(i)
+                abecesario_en_lista.remove(i)
             else:
                 pass
         print (abecesario_en_lista)

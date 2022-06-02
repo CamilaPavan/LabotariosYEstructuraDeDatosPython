@@ -16,4 +16,4 @@ while True:
 
 for i in range (1,tiempo+1):
     inversion+= inversion*interes/100
-    print (f"el dinero obteniedo en el anio {tiempo} es igual a {inversion}")
+    print (f"el dinero obteniedo en el anio {i} es igual a {inversion}")

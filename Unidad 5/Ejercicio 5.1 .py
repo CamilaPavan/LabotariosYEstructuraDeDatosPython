@@ -25,7 +25,7 @@ def ordenar_edades():
             except:
                 print("Ingrese un numero")
         
-    edades.sort() #la acomodo de menor a mayor
-    print(f'La edad mayor ingresada es {edades[-1]}\nLa lista completa es: {edades}')
+    edades.sort(reverse=True) #la acomodo de menor a mayor
+    print(f'La edad mayor ingresada es {edades[0]}\nLa lista completa es: {edades}')
 
 ordenar_edades()

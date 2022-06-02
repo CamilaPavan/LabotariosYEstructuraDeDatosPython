@@ -8,6 +8,7 @@ ciudad_de_residencia
 Niño (0 a 14), Adolecente (14 a 22), Joven (22 a 30), mayor(30 a 50), mas mayor(50 a 120)
 """
 
+
 class Persona:
     nacionalidad = "argentina" #global, se usa el creador 
     def __init__(self,dni, nombre1, apellido1, edad1, residencia1):
@@ -34,10 +35,3 @@ class Persona:
             print(f"{self.nombre}es un mas mayor")
         else:
             print("erro en la edad")
-
-
-
-        
-
-
-

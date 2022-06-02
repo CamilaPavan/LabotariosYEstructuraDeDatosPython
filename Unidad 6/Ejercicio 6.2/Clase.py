@@ -2,6 +2,7 @@
 Cuyo constructutor debe inicializar los atributos tipo_de_figura, color, y tamaño (por defecto "pequeño")
 """
 
+
 class FiguraGeometrica:
     #Crear la clase
     def __init__(self, tipo_de_figura,color,tamano="pequeno"):

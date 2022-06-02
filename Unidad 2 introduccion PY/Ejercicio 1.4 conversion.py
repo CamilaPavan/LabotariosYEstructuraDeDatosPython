@@ -7,6 +7,10 @@ convertir ese dinero a dolares( 1USD -> 200$)
 devoler por pantalla True en caso que pueda comprar, False en caso que no
 No deben aparecer errores
 """
+
+from os import putenv
+
+
 try: 
 
     dinero_actual = float (input ("ingrese su denero actual: "))
@@ -14,7 +18,8 @@ try:
     valor_insumo = float(input("ingrese el valor en USD de lo que desea comprar: "))
     dinero_actual_usd = dinero_actual/200
     print (dinero_actual_usd >= valor_insumo) 
-    #Python por defecto te devuelve true o false.
+    #Python por defecto te devuelve true o false.from xxxx import *
 
 except: 
     print("Error en los datos colocados")
+

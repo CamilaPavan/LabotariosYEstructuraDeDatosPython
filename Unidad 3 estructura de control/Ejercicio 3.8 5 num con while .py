@@ -17,7 +17,7 @@ while i<=5:
         acum+=numero
     except:
         print("No es un número válido")
-        i = 1
-        acum = 0
+        #i = 1
+        #acum = 0  , en caso de que quiera que empeciece de cero el contador cuando pone un numero mal 
 promedio = acum/5
 print(f"El promedio de los cinco números ingresados es {promedio}")

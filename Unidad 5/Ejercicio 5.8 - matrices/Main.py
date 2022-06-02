@@ -21,7 +21,8 @@ Codigo Nombre Precio Stock
 * Estructurar el programa a criterio propio
 """
 
-import funciones_imprimir as fim
+
+import funciones_imprimir as fi
 import variables as vr
 
 

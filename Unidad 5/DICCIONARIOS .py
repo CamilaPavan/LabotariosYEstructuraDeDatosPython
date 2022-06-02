@@ -11,7 +11,10 @@ Entonces:
 
 Es una colección de elementos, donde cada uno tiene una llave key y un valor value.
 Los diccionarios se pueden crear con paréntesis {} separando con una coma cada par key: value.
+
 """
+
+
 
 #RECOMENDADO
 diccionario_persona = {
@@ -42,9 +45,9 @@ print("---------------Valores---------------")
 for i in diccionario_persona:
   print(diccionario_persona[i]) #este valor i, imprime los valores
 
-#iterar key y valor juntos
+#iterar key y valor juntos, como listas 
 print(diccionario_persona.items())
-
+#Mas prolijo 
 for i, j in diccionario_persona.items():
     print(f"Key: {i} - Valor: {j}")
 

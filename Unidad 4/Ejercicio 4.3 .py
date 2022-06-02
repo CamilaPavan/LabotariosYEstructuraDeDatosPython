@@ -18,10 +18,6 @@ def contador_de_letras(letra,palabra_o_frase):
             contador += 1
     return contador
 
-letras = contador_de_letras("a", "la casa tiene muchas a")
-
-print (f"cantidad de letras a en la frase es {letras}")
-print (contador_de_letras("a","la casa tiene aaaaa muchas a "))
 
 def comparador_de_palabras(palabra1,palabra2):
     contador1= 0
@@ -29,22 +25,18 @@ def comparador_de_palabras(palabra1,palabra2):
     for i in palabra1:
         contador1+= 1
         if i == " ":
-            print ("ingreso una frase, no una palabra")
+            return(print ("ingreso una frase"))
         
     for i in palabra2:
         contador2 += 1
         if i == " ":
-            print ("ingreso una frase, no una palabra")
-            break
+            return(print("ingreso una frase, no una palabra"))
+
     if contador1 < contador2:
         print (f"la palabra {palabra1} es mas corta que {palabra2}")
     else:
         print (f"la palabra {palabra1} es mas larga que {palabra2}")
 
-comparacion = comparador_de_palabras("calculadora","helicoptero")
-print (comparacion)
-
-print(comparador_de_palabras("casa","casas"))
 
 def quitador_de_vocales(palabra_o_frase):
     palabra_auxiliar = ""
@@ -52,11 +44,35 @@ def quitador_de_vocales(palabra_o_frase):
         if i != "a" and i != "e" and i != "i" and i != "o" and i != "u":
             palabra_auxiliar= palabra_auxiliar + i
 
-    return palabra_auxiliar
+    print (palabra_auxiliar)
 
-print (quitador_de_vocales("una frase que tenga todas las vocalis"))
 
-        
+
+while True:
+    condicion=input(
+""" ------ MENU PRINCIPAL ------
+Por favor ingrese una opcion
+        1. contador de letras
+        2. comparar palabras
+        3. Quitar vocales
+        4. Salir
+Numero : """)
+    if (condicion=="1"): 
+        letra = input("ingrese la letra a contar: ")
+        frase = input ("ingrese la frase: ")
+        print (f"la letra se repite {contador_de_letras(letra,frase)} veces ")
+    elif (condicion=="2"):
+        palabra1 = input("ingrese la primer palabra a comparar: ")
+        palabra2 = input ("ingrese la segunda palabra a comparar: ")
+        comparador_de_palabras(palabra1, palabra2)
+    elif (condicion=="3"):
+        palabra_o_frase = input ("ingrese la palabra o frase a quitar las vocales: ")
+        quitador_de_vocales (palabra_o_frase)
+    elif (condicion=="4"):
+        print ("Gracias por usar .....")
+        break 
+    else:
+        print("ninguna opcion correcta")
 
 
 

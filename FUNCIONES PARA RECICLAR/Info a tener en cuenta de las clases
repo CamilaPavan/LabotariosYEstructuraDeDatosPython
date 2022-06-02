@@ -1,0 +1,9 @@
+Para saber si CONSTRUCTOR FUNCIONA:
+    creo una instancia, ej: figura_1.nombreClase(atributos,atributo, atri)
+    print (figura_1.atri) y si esta bien me va a imprimir ese dato
+
+Para usar el metodo de una instancia,tengo que:
+    colocar instancia.metodo()
+    ej: figura_1.presentarse()
+
+Para PRESENTARSE en las clases, no hace falta el "FOR IN", porque voy llamando el metodo por instancia

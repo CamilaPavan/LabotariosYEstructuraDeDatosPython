@@ -18,3 +18,11 @@ try:
 
 except:
     print("por favor ingrese una contrasena valida")
+
+
+
+variable_string="1234"
+if variable_string.isdigit(): #lo ponemos con un punto y parentesis que abren y cierran 
+  print("el stirng son solo numeros")
+else:
+  print("el stirng no son numeros")

@@ -50,8 +50,10 @@ print(lista)
 
 lista = [6,2,1,98,2]
 lista.append(8) #agregar un elemento
-lista.sort() #ordenar de mayor a menor 
+lista.sort() #ordenar de menor a mayor 
 print(lista)
+lista.sort(reverse= True) #de mayor a menor
+print (lista)
 
 lista_max = [1,2,5,4,10,28,6]
 print(max(lista_max))  #imprimir el mas grande la lista 

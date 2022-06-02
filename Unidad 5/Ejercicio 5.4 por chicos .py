@@ -23,13 +23,11 @@ def viaje():
     print(f"La duracion de todo el viaje es: {horas}hs: {minutos}min")
 
 def minutos_a_hora(minutos):
-    minutos_iniciales = minutos
     horas_finales = 0
     while  minutos > 60:
         minutos = minutos - 60
         horas_finales+=1
-
-    #print(f"los {minutos_iniciales} son {horas_finales} hs:{minutos} min")
+        
     return horas_finales,minutos
 
 viaje()

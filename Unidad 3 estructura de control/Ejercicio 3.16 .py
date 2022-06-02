@@ -8,7 +8,7 @@ No producir errores
 """
 while True:
     try:
-        palabra = str(input("ingrese una palabra: "))
+        palabra = (input("ingrese una palabra: "))
         if palabra.isalpha():
             for i in palabra:
                 print (i)
