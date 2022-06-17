@@ -1,5 +1,5 @@
 
-
+ 
 import Computadora as cp
 
 computadoras_a_arreglar = []

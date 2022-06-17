@@ -1,5 +1,5 @@
 
-
+ 
 
 class Computadora ():
     def __init__(self,num_pc,descripcion,tecnico):

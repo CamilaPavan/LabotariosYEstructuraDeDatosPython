@@ -51,7 +51,7 @@ print(diccionario_persona.items())
 for i, j in diccionario_persona.items():
     print(f"Key: {i} - Valor: {j}")
 
-#--------------
+#-------  -------
 
 diccionario_persona = {
     "Nombre": "juan",
@@ -73,6 +73,9 @@ print(diccionario_persona)
 print (diccionario_persona)
 diccionario_persona.pop("Nombre") #Elimina la key y su valor 
 print (diccionario_persona)
+
+print("---------------")
+print(type(diccionario_persona))
 
 
 #print(diccionario_persona.get("DNI","No existe")[2])
