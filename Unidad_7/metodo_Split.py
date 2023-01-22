@@ -1,6 +1,7 @@
 #De una cadena devuelve una lista, con elementos "cortados" en donde indiquemos 
 mail = 'fede@gmail.com'
-mail.split('@')
+prueba_separar = mail.split('@')
+print(prueba_separar)
 lista = "fede,hola,chau"
 lista_1 = lista.split(',')#separa en las comas
 print(lista_1)
@@ -12,6 +13,7 @@ print (lista_2)
 #corto en el @ e imprimo la pos 0 de la lista
 mail = 'federico@gmail.com'
 usuario = mail.split('@')[0]
+print (usuario)
 print(f'El usuario es {usuario}.')
 
 #Separa palabras
